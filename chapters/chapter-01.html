@@ -67,6 +67,23 @@
     </div>
     <section class="chapter-body">
       <div class="wrap">
+        <div class="read-aloud" data-read-aloud
+             data-ra-unsupported="此瀏覽器不支援朗讀功能，請改用 Chrome、Safari 或 Edge 瀏覽器。"
+             data-ra-pause-label="暫停" data-ra-resume-label="繼續"
+             data-ra-status-reading="朗讀中&hellip;" data-ra-status-paused="已暫停">
+          <button type="button" class="ra-btn ra-play" data-ra-play><span class="ra-icon" aria-hidden="true">&#9654;</span> 朗讀本章</button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-pause disabled><span class="ra-icon" aria-hidden="true">&#10074;&#10074;</span> <span data-ra-pause-text>暫停</span></button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-stop disabled><span class="ra-icon" aria-hidden="true">&#9632;</span> 停止</button>
+          <label class="ra-field">
+            <span>聲音</span>
+            <select data-ra-voice></select>
+          </label>
+          <label class="ra-field ra-speed-field">
+            <span>語速</span>
+            <input type="range" min="0.6" max="1.3" step="0.1" value="0.95" data-ra-speed>
+          </label>
+          <span class="ra-status" data-ra-status></span>
+        </div>
         <div class="prose">
           <p>在我們居住的峭壁與海灣之間，住著許多海鷗，以及各種海鳥。黃昏的時候，夕陽將陡峭的岩壁染成橘紅色。海風吹過懸崖上的樹木與灌木叢，年復一年，從不停止。那些樹木因此長得格外堅硬，枝幹向著風的方向彎曲，卻始終沒有倒下。</p>
 <p>在峭壁邊緣的大樹上，眾鷹築起自己的巢穴。巨大的巢由粗大的樹枝層層堆疊而成，牢牢地架在高高的樹冠之間。巢裡的幼鷹蓬鬆柔軟，總是張著嘴，發出細細的叫聲，等待父母從海上帶回食物。鷹父鷹母則輪流飛出去覓食，再帶著食物回到巢中。我們這一帶的白頭鷹，冬季來臨時，我們向南遷徙；夏季來臨，又飛回北方。對我們而言，大地與海洋就是永遠展開的家園。</p>

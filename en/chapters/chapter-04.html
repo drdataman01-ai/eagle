@@ -67,6 +67,23 @@
     </div>
     <section class="chapter-body">
       <div class="wrap">
+        <div class="read-aloud" data-read-aloud
+             data-ra-unsupported="Read-aloud isn't supported in this browser. Try Chrome, Safari, or Edge."
+             data-ra-pause-label="Pause" data-ra-resume-label="Resume"
+             data-ra-status-reading="Reading&hellip;" data-ra-status-paused="Paused">
+          <button type="button" class="ra-btn ra-play" data-ra-play><span class="ra-icon" aria-hidden="true">&#9654;</span> Listen</button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-pause disabled><span class="ra-icon" aria-hidden="true">&#10074;&#10074;</span> <span data-ra-pause-text>Pause</span></button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-stop disabled><span class="ra-icon" aria-hidden="true">&#9632;</span> Stop</button>
+          <label class="ra-field">
+            <span>Voice</span>
+            <select data-ra-voice></select>
+          </label>
+          <label class="ra-field ra-speed-field">
+            <span>Speed</span>
+            <input type="range" min="0.6" max="1.3" step="0.1" value="0.95" data-ra-speed>
+          </label>
+          <span class="ra-status" data-ra-status></span>
+        </div>
         <div class="prose">
           <p>People loved listening to my Master tell stories. They always wanted Him to say more. But happy moments always seem to pass the fastest. Before we knew it, the setting sun had painted the horizon orange-red, and the evening sky had begun to glow.</p>
 <p>My Master asked the disciples beside Him what they should give the crowd to eat. Some of them answered that even if they sent everyone home to find food, it would take a long time for the entire crowd to disperse. The disciples began asking whether anyone among the people had brought food. Very few had.</p>

@@ -612,6 +612,89 @@ html:not([data-theme="night"]) .icon-moon{ display: none; }
   letter-spacing: .08em;
 }
 
+/* -------------------- read aloud -------------------- */
+
+.read-aloud{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  max-width: 34em;
+  margin: 0 auto 36px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg-raised);
+}
+
+.read-aloud.is-unsupported{
+  display: block;
+  font-size: .92rem;
+  font-style: italic;
+  color: var(--text-soft);
+}
+
+.ra-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: .88rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--parchment);
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, opacity .2s ease, transform .15s ease;
+}
+.ra-btn:hover:not(:disabled){ background: var(--accent-deep); border-color: var(--accent-deep); transform: translateY(-1px); }
+.ra-btn:disabled{ opacity: .4; cursor: not-allowed; transform: none; }
+.ra-btn.ra-secondary{
+  background: transparent;
+  color: var(--text);
+  border-color: var(--line);
+}
+.ra-btn.ra-secondary:hover:not(:disabled){ border-color: var(--accent); color: var(--accent); }
+.ra-icon{ font-size: .75em; }
+html[data-theme="night"] .ra-btn:not(.ra-secondary){ color: var(--indigo); }
+
+.ra-field{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .82rem;
+  color: var(--text-soft);
+}
+.ra-field select{
+  font-family: var(--font-body);
+  font-size: .82rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 5px 8px;
+  max-width: 170px;
+}
+.ra-speed-field input[type="range"]{
+  width: 90px;
+  accent-color: var(--accent);
+}
+
+.ra-status{
+  font-size: .8rem;
+  font-style: italic;
+  color: var(--text-soft);
+  margin-left: auto;
+  min-height: 1.2em;
+}
+
+@media (max-width: 480px){
+  .read-aloud{ padding: 12px 14px; }
+  .ra-status{ margin-left: 0; width: 100%; }
+}
+
 /* -------------------- author note -------------------- */
 
 .author-card{

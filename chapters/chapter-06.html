@@ -67,6 +67,23 @@
     </div>
     <section class="chapter-body">
       <div class="wrap">
+        <div class="read-aloud" data-read-aloud
+             data-ra-unsupported="此瀏覽器不支援朗讀功能，請改用 Chrome、Safari 或 Edge 瀏覽器。"
+             data-ra-pause-label="暫停" data-ra-resume-label="繼續"
+             data-ra-status-reading="朗讀中&hellip;" data-ra-status-paused="已暫停">
+          <button type="button" class="ra-btn ra-play" data-ra-play><span class="ra-icon" aria-hidden="true">&#9654;</span> 朗讀本章</button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-pause disabled><span class="ra-icon" aria-hidden="true">&#10074;&#10074;</span> <span data-ra-pause-text>暫停</span></button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-stop disabled><span class="ra-icon" aria-hidden="true">&#9632;</span> 停止</button>
+          <label class="ra-field">
+            <span>聲音</span>
+            <select data-ra-voice></select>
+          </label>
+          <label class="ra-field ra-speed-field">
+            <span>語速</span>
+            <input type="range" min="0.6" max="1.3" step="0.1" value="0.95" data-ra-speed>
+          </label>
+          <span class="ra-status" data-ra-status></span>
+        </div>
         <div class="prose">
           <p>在天空、地上和海裡，我所見過的動物中，人類比我們任何一族都聰明。</p>
 <p>他們比樹木矮小，卻能砍倒整片森林；他們用木頭建造房屋，甚至建造高塔，彷彿想把自己送到天空。他們比綿羊和山羊少得多，卻能養殖成千上萬的羊群。他們知道什麼時候該撒種，什麼時候該收割；知道葡萄成熟的季節，也知道怎樣把葡萄釀成酒。他們的男孩去學校學習，他們的女孩把頭髮編成漂亮的辮子。他們會寫字、數數、建造，也會航行到很遠很遠的地方。</p>

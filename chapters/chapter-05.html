@@ -67,6 +67,23 @@
     </div>
     <section class="chapter-body">
       <div class="wrap">
+        <div class="read-aloud" data-read-aloud
+             data-ra-unsupported="此瀏覽器不支援朗讀功能，請改用 Chrome、Safari 或 Edge 瀏覽器。"
+             data-ra-pause-label="暫停" data-ra-resume-label="繼續"
+             data-ra-status-reading="朗讀中&hellip;" data-ra-status-paused="已暫停">
+          <button type="button" class="ra-btn ra-play" data-ra-play><span class="ra-icon" aria-hidden="true">&#9654;</span> 朗讀本章</button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-pause disabled><span class="ra-icon" aria-hidden="true">&#10074;&#10074;</span> <span data-ra-pause-text>暫停</span></button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-stop disabled><span class="ra-icon" aria-hidden="true">&#9632;</span> 停止</button>
+          <label class="ra-field">
+            <span>聲音</span>
+            <select data-ra-voice></select>
+          </label>
+          <label class="ra-field ra-speed-field">
+            <span>語速</span>
+            <input type="range" min="0.6" max="1.3" step="0.1" value="0.95" data-ra-speed>
+          </label>
+          <span class="ra-status" data-ra-status></span>
+        </div>
         <div class="prose">
           <p>我的主人和祂的門徒乘船去另一個村莊。那天，風和海浪有一場小小的較量。</p>
 <p>風和海浪想要爭辯，到底是誰移動了天上的雲？是風呢？還是海浪呢？也許是因為下午太安靜、太無聊了，風就一次又一次地從山頂吹向海面，海浪也不甘示弱，一浪接著一浪地撲向風。</p>

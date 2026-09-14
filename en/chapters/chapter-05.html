@@ -67,6 +67,23 @@
     </div>
     <section class="chapter-body">
       <div class="wrap">
+        <div class="read-aloud" data-read-aloud
+             data-ra-unsupported="Read-aloud isn't supported in this browser. Try Chrome, Safari, or Edge."
+             data-ra-pause-label="Pause" data-ra-resume-label="Resume"
+             data-ra-status-reading="Reading&hellip;" data-ra-status-paused="Paused">
+          <button type="button" class="ra-btn ra-play" data-ra-play><span class="ra-icon" aria-hidden="true">&#9654;</span> Listen</button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-pause disabled><span class="ra-icon" aria-hidden="true">&#10074;&#10074;</span> <span data-ra-pause-text>Pause</span></button>
+          <button type="button" class="ra-btn ra-secondary" data-ra-stop disabled><span class="ra-icon" aria-hidden="true">&#9632;</span> Stop</button>
+          <label class="ra-field">
+            <span>Voice</span>
+            <select data-ra-voice></select>
+          </label>
+          <label class="ra-field ra-speed-field">
+            <span>Speed</span>
+            <input type="range" min="0.6" max="1.3" step="0.1" value="0.95" data-ra-speed>
+          </label>
+          <span class="ra-status" data-ra-status></span>
+        </div>
         <div class="prose">
           <p>My Master and His disciples got into a boat to travel to another village. That day, the wind and the waves had a little quarrel.</p>
 <p>They seemed to be arguing over a question that mattered greatly to them: Who was moving the clouds across the sky—the wind or the waves? Perhaps the afternoon had been too quiet and they were simply bored. The wind blew again and again from the mountaintops toward the sea, while the waves refused to be outdone. One wave after another rose up and rushed toward the wind.</p>
